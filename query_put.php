@@ -1,7 +1,7 @@
 <?php
   $username="id3709620_hover";
   $dbname="id3709620_hover";
-  $url="hoverapp.000webhostapp.com";
+  $url="localhost";
   $password="hoverapp";
   mysqli_report(MYSQLI_REPORT_STRICT);
   $fail=false;
@@ -43,7 +43,7 @@
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $randstring = '';
     for ($i = 0; $i < 10; $i++) {
-        $randstring = $randstring + $characters[rand(0, strlen($characters))];
+        $randstring = $randstring . $characters[rand(0, strlen($characters))];
     }
     return $randstring;
   }
